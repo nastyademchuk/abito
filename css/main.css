@@ -3,10 +3,37 @@ body {
 	font-size: 14px;
 	color: #0A143A;
 }
-.header {
+h2 {
+	font-size: 24px;
+	line-height: 28px;
+	color: #0A143A;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+h4 {
+	font-size: 18px;
+	line-height: 21px;
+	color: #0A143A;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+h5 {
+	font-size: 14px;
+	line-height: 16px;
+	color: #0A143A;
+	margin-top: 7px;
+	margin-bottom: 5px;
+
+}
+
+.container {
 	width: 1146px;
 	margin: auto;
+}
+.header {
+	margin-bottom: 12px;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .navbar {
 	display: flex;
@@ -46,6 +73,8 @@ body {
 	border-radius: 5px;
 	color: white;
 	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 16px;
 }
 .search-panel {
 	height: 44px;
@@ -76,5 +105,105 @@ body {
 }
 .search-button-svg {
 	padding: 0;
+}
+.page-content {
+	display: grid; /*Колонки*/
+	grid-template-columns: 9fr 3fr; /*Деление области по колонкам*/
+	grid-column-gap: 30px; /*Расстояние между двумя блоками*/
 
 }
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.card-image {
+	width: 264px;
+	height: 178px;
+	border-radius: 10px;
+	object-fit: cover; /*Если картинка будет иметь другой размер она обрежиться*/
+}
+.card {
+	margin-bottom: 20px;
+}
+.card-link {
+	text-decoration: none;
+}
+.card-title {
+	font-size: 16px;
+	line-height: 19px;
+	color: #256EEB;
+	margin-top: 12px;
+	margin-bottom: 5px;
+
+}
+.card-header {
+	display: flex;
+	justify-content: space-between;
+
+}
+.like {
+	background: #fff;
+	border: none;\
+	cursor: pointer;
+	margin-left: 15px;
+}
+.card-price {
+	
+	font-size: 16px;
+    line-height: 19px;
+}
+.card-text {
+	font-size: 14px;
+	line-height: 16px;
+	color: #C4C4C4;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+.card-text:not(:last-child) {
+	margin-top: 10px;
+
+}
+.cervice-text {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+.sidebar {
+	height: 426px;
+	margin-bottom: 30px;
+}
+.offer {
+	height: 426px;
+	margin-top: 11px;
+}
+.offer-text {
+	font-size: 14px;
+	line-height: 16px;
+	color: #C4C4C4;
+}
+.offer-link {
+	line-height: 16px;
+	text-decoration-line: underline;
+	color: #C4C4C4;
+	display: block;
+	margin-top: 5px;
+}
+.footer-menu {
+	margin-top: 16px;
+	padding-left: 0px;
+	display: block;
+
+}
+.footer-menu-item {
+	
+	list-style-type: none;
+	
+}
+.footer-menu-text {
+	font-size: 12px;
+	line-height: 14px;
+	color: #0A143A;
+	text-decoration: none;
+}
+
